@@ -36,4 +36,3 @@ def fetch_website_links(url):
     links = [link.get("href") for link in soup.find_all("a")]
     return [link for link in links if link]
 
-fetch_website_contents("https://openai.com/")
